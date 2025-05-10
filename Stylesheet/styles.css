@@ -1,0 +1,105 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+    background-color: #007BFF; /* Blue header */
+    padding: 20px;
+    text-align: left; /* Align header content to the left */
+    color: white;
+}
+
+/* Navigation styling */
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    text-align: left; /* Align main content to the left */
+}
+
+/* Paragraph adjustments */
+p {
+    max-width: 80%; /* Control the width of the paragraph */
+    margin-left: 20px; /* Adds space from the left edge */
+    margin-right: 20px; /* Adds space on the right side too for balance */
+    line-height: 1.6; /* Improves readability */
+    font-size: 16px; /* Adjusts font size for better readability */
+}
+
+/* Styling the image as a float card with black background */
+img {
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    object-fit: cover; /* Ensures the image fits the card properly */
+    display: block;
+    margin-left: 0; /* Align image to the left */
+    position: relative;
+}
+
+/* Name under the image in italics */
+img::after {
+    content: "Angela Moyo"; /* Display name under the image */
+    position: absolute;
+    bottom: 10px; /* Position at the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center the name */
+    color: white;
+    font-style: italic;
+    font-size: 16px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #007BFF; /* Blue footer */
+    color: white;
+    text-align: left; /* Align footer content to the left */
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    p {
+        max-width: 95%; /* Use more space on smaller screens */
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
